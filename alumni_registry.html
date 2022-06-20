@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is the link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- this is the link to bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="main.css">
+    <title>SHAMSIYE Register</title>
+</head>
+
+<body>
+
+    <div class="text-center">
+        <h2 class="underline mt-5">Registration For Shamsiye Alumni</h2>
+    </div>
+
+    <div class="registration-form container">
+
+        <form class="py-5 txt-color" action="alumni_registry.php" method="post">
+
+            <div class="mb-3">
+                <label for="InputName" class="form-label">Name</label>
+                <input type="text" class="form-control" maxlength="30" id="InputName" aria-describedby="NameHelp" name="name">
+                <div id="NameHelp" class="form-text">Your registration name.</div>
+            </div>
+            <div class="mb-3">
+                <label for="YearOfEnrollment" class="form-label">Year of Enrollment</label>
+                <input type="number" class="form-control" id="YearOfEnrollment" name="yoe" >
+            </div>
+            <div class="mb-3">
+                <label for="YearOfGraduation" class="form-label">Year of Graduating</label>
+                <input type="number" class="form-control" id="YearOfGraduation" name="yog" >
+            </div>
+            <div class="mb-3">
+                <label for="HeadmasterName" class="form-label">Headmaster's Name</label>
+                <input type="text" class="form-control" maxlength="30" id="HeadmasterName" aria-describedby="HeadmasterNameHelp" name="hm">
+                <div id="HeadmasterNameHelp" class="form-text">The name of the headmaster  at your time.</div>
+            </div>
+            <div class="mb-3">
+                <label for="famousTeacherName" class="form-label">Famous Teacher's Name</label>
+                <input type="text" class="form-control" maxlength="30" id="famousTeacherName" aria-describedby="famousTeacherNameHelp" name="fteacher">
+                <div id="famousteacherNameHelp" class="form-text">The name of the famous teacher at your time.</div>
+            </div>
+           
+            <div class="mb-4 mt-4">
+                <label for="result" class="form-label">Results :   </label><br>
+                <select name="result" style="color: grey; border-color:#6c63ff; border-radius: 0.5rem; padding:0.3rem 1rem;" id="results">
+                    <option value="1">Division 1</option>
+                    <option value="2">Division 2</option>
+                    <option value="3">Division 3</option>
+                    <option value="4">Division 4</option>
+                    <option value="0">Division 0</option>
+                  </select>
+            </div>
+            <div class="mb-3">
+                <label for="CurrnetOccupation" class="form-label">Current Occupation</label>
+                <input type="text" class="form-control" maxlength="20" id="CurrentOccupation" name="occupation">
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" name="address">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                <input type="number" class="form-control" id="mobileNumber" name="mnumber aria-describedby="mobileNumberHelp"">
+                <div id="mobileNumberHelp" class="form-text">Enter with country code.</div>
+            </div>
+           
+            <button type="submit" class="btn" style="background: #6c63ff; color: white;">Submit</button>
+        </form>
+    </div>
+
+    <!-- the footer section start here -->
+    <section class="bg-light my-2 mt-5">
+        <h3 class="text-center pt-4"> Shamsiye Schools </h3>
+
+        
+        <div class=" pt-3 pb-3 text-center">
+            <a class="social-links social-email" href="info@shamsiyeschools.org"><i class="bi bi-envelope-fill"></i></a>
+            <a class="social-links social-facebook" href="https://www.facebook.com/shamsiyeschools/"><i class="bi bi-facebook"></i></a>
+            <a class="social-links social-twitter" href="https://twitter.com/Shamsiyeboys"><i class="bi bi-twitter"></i></a>
+            <a class="social-links social-youtube" href="https://www.youtube.com/channel/UC0GrUM18Hke04gvciddl6CA"><i
+                    class="bi bi-youtube">
+                </i></a>
+        </div>
+
+        <div class=" pt-3 text-center">
+            <p><span style="font-size: 0.9rem;"> Copyright © 2022  </span></p>
+                
+        </div>
+        <div class=" pt-3 mb-1 text-center">
+            <p>Created with
+                <i class="bi bi-heart-fill text-danger"></i>  by <strong>2021-04-11519</strong></p>
+        </div>
+    </section>
+</body>
+
+</html>

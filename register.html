@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is the link to bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- this is the link to bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="main.css">
+    <title>SHAMSIYE Register</title>
+</head>
+
+<body>
+
+    <div class="text-center">
+        <h2 class="underline mt-5">Registration For Shamsiye</h2>
+    </div>
+
+    <div class="registration-form container">
+
+        <form class="py-5" action="register.php" method="post">
+
+            <div class="mb-3">
+                <label for="FirstName" class="form-label txt-color">First Name</label>
+                <input type="text" class="form-control" id="FirstName" name="fname">
+            </div>
+            <div class="mb-3">
+                <label for="SecondName" class="form-label txt-color">Second Name</label>
+                <input type="text" class="form-control" id="SecondName" name="sname">
+            </div>
+            <div class="mb-3">
+                <label for="LastName" class="form-label txt-color">Last Name</label>
+                <input type="text" class="form-control" id="LastName" name="lname">
+            </div>
+            <div class="mb-3">
+                <label for="UserName" class="form-label txt-color">Username</label>
+                <input type="text" class="form-control" id="UserName" aria-describedby="UserNameHelp" name="uname">
+                <div id="UserNameHelp" class="form-text fs-9">The name others will identify you with.</div>
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label txt-color">Email address</label>
+                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name="inemail">
+                <div id="emailHelp" class="form-text fs-9">We'll never share your email with anyone.</div>
+            </div>
+            <div class="mb-3">
+                <label for="DateOfBirth" class="form-label txt-color">Date of birth</label>
+                <input type="date" class="form-control" id="DateOfBirth" name="dob">
+            </div>
+            <div class="mb-3">
+                <label for="InputPassword" class="form-label txt-color">Password</label>
+                <input type="password" minlength="8" class="form-control" id="InputPassword" aria-describedby="passwordHelp" name="pass">
+                <div id="passwordHelp" class="form-text" fs-9>It should have atleast 8 characters with both alphanumerical and special character.</div>
+            </div>
+            <div class="mb-3">
+                <label for="CV" class="form-label txt-color">CV</label>
+                <input type="file" class="form-control" id="CV" aria-describedby="CVHelp" name="CVfile">
+                <div id="CVHelp" class="form-text fs-9">Your CV file.</div>
+            </div>
+            <div class="mb-3">
+                <label for="MobileNumber" class="form-label txt-color">Mobile Number</label>
+                <input type="number" class="form-control" id="MobileNumber" aria-describedby="MobileNumberHelp" name="mnumber">
+                <div id="MobileNumberHelp" class="form-text">Enter with country code.</div>
+            </div>
+            <div class="mb-3">
+                <label for="Facebook" class="form-label social-facebook"><i class="bi bi-facebook"></i></label>
+                <input type="text" class="form-control" id="Facebook" aria-describedby="FacebookHelp" name="facebook">
+                <div id="FacebookHelp" class="form-text">Your Facebook Username</div>
+            </div>
+            <div class="mb-3">
+                <label for="Twitter" class="form-label social-twitter"><i class="bi bi-twitter"></i></label>
+                <input type="text" class="form-control" id="Twitter" aria-describedby="TwitterHelp" name="twitter">
+                <div id="TwitterHelp" class="form-text">Your Twitter Username</div>
+            </div>
+            <div class="mb-3">
+                <label for="Instagram" class="form-label social-instagram"><i class="bi bi-instagram"></i></label>
+                <input type="text" class="form-control" id="Instagram" aria-describedby="InstagramHelp" name="instagram">
+                <div id="InstagramHelp" class="form-text">Your Instagram Username</div>
+            </div>
+            <button type="submit" class="btn" style="background: #6c63ff; color: white;">Submit</button>
+        </form>
+    </div>
+
+    <!-- the footer section start here -->
+    <section class="bg-light my-2 mt-5">
+        <h3 class="text-center pt-4"> Shamsiye Schools </h3>
+
+
+        <div class=" pt-3 pb-3 text-center">
+            <a class="social-links social-email" href="info@shamsiyeschools.org"><i class="bi bi-envelope-fill"></i></a>
+            <a class="social-links social-facebook" href="https://www.facebook.com/shamsiyeschools/"><i class="bi bi-facebook"></i></a>
+            <a class="social-links social-twitter" href="https://twitter.com/Shamsiyeboys"><i class="bi bi-twitter"></i></a>
+            <a class="social-links social-youtube" href="https://www.youtube.com/channel/UC0GrUM18Hke04gvciddl6CA"><i
+                    class="bi bi-youtube">
+                </i></a>
+        </div>
+
+        <div class=" pt-3 text-center">
+            <p><span style="font-size: 0.9rem;"> Copyright © 2022  </span></p>
+                
+        </div>
+        <div class=" pt-3 mb-1 text-center">
+            <p>Created with
+                <i class="bi bi-heart-fill text-danger"></i>  by <strong>2021-04-11519</strong></p>
+        </div>
+    </section>
+</body>
+
+</html>

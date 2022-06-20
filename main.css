@@ -1,0 +1,123 @@
+.bg-grey{
+    background-color: #e9ecff;
+}
+
+
+
+
+.txt-color{
+    color: #6c63ff !important;
+}
+
+.navbar-links:hover{
+    color: #838387 !important;
+
+}
+
+/* this is the custom underline for headers */
+
+.underline{
+    position: relative;
+    display: inline-block;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #6c63ff;
+    transition: width 0.3s ease;
+    width: 60%;
+    height: 14px;
+
+}
+
+
+/* button styles */
+
+
+.button:hover{
+    color: white !important;
+    border-color: white;
+    background-color: #6C63FF !important;
+}
+
+.button{
+    color: #6C63FF;
+    border-radius: 1.76rem;
+    width: 16rem;
+    height:4.2rem;
+    border-color: #6C63FF;
+}
+
+.button-staff{
+    color: #6C63FF;
+    background-color: white;
+    border-color: white;
+    font-size: 3rem;
+}
+
+.button-staff:hover{
+    border-color: white !important;
+}
+/* cards heading */
+h5{
+    color: #6c63ff;
+}
+
+
+/* social medias */
+
+.social-links{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+.social-facebook{
+    color: #3b5998; 
+}
+.social-facebook:hover{
+    color: #3b5998 !important;
+}
+
+
+.social-youtube{
+    color: #FF0000; 
+}
+.social-youtube:hover{
+    color: #FF0000;
+}
+
+
+.social-twitter{
+    color: #1DA1F2;
+}
+.social-twitter:hover{
+    color: #1DA1F2;
+}
+
+.social-email{
+    color: #FBBC05;
+}
+.social-email:hover{
+    color: #FBBC05;
+}
+
+/* staff section */
+
+.staff-display{
+    margin: 0 auto;
+    padding: 4rem;
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.staff-image{
+    height: 33rem;
+    width: 35rem;
+    border-radius: 2rem;
+    }
+
